@@ -36,6 +36,17 @@
             border-bottom: 0.2rem solid;
         }
 
+        .nav-masthead .disabled {
+            color: #b3b3b3 !important;
+            cursor: not-allowed !important;
+        }
+
+      
+        a.text-dark.disabled:hover ,a.text-dark.disabled:focus {
+            color: #b3b3b3 !important;
+        }
+
+
         /* sub menu active */
         .slidemenu .active a {
             color: #1f6bff !important;
@@ -87,8 +98,8 @@
                 <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead " style="letter-spacing: 1.5px;">
                     <a class="p-2 text-dark text-decoration-none " href="../index.html">Foundations(基礎)</a>
                     <a class="p-2 text-dark text-decoration-none active" href="#">Design(設計)</a>
-                    <a class="p-2 text-dark text-decoration-none" href="#">Components(元件)</a>
-                    <a class="p-2 text-dark text-decoration-none" href="#">Patterns(模板)</a>
+                    <a class="p-2 text-dark text-decoration-none " href="#">Components(元件)</a>
+                    <a class="p-2 text-dark text-decoration-none disabled" href="#">Patterns(模板)</a>
                 </nav>
             </div>
         </div>
