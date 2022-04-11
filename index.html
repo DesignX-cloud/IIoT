@@ -8,61 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="./css/all.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>IIOT Design System</title>
-    <style>
-        .wrapper {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            min-width: 0;
-            min-height: 100vh;
-        }
 
-        .main-body {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            height: 85vh;
-        }
-
-        .bg-grayblue {
-            background-color: #ebeef4;
-        }
-
-        .nav-masthead .active {
-            color: #1f6bff !important;
-            border-bottom-color: #1f6bff;
-            border-bottom: 0.2rem solid;
-        }
-
-        .nav-masthead .disabled {
-            color: #b3b3b3 !important;
-            cursor: not-allowed !important;
-        }
-
-      
-        a.text-dark.disabled:hover ,a.text-dark.disabled:focus {
-            color: #b3b3b3 !important;
-        }
-
-        .slidemenu .active a {
-            color: #1f6bff !important;
-            border-left-color: #1f6bff;
-            border-left: 0.2rem solid;
-            padding-right: 1rem;
-        }
-
-        .slidemenu .active a span {
-            padding-left: .5rem;
-        }
-
-        .slidemenu .disabled {
-            color: #464646 !important;
-            cursor: not-allowed !important;
-
-        }
-    </style>
 
 </head>
 
@@ -71,30 +21,73 @@
 
 
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
-            <div class="col-1">
-                <a class="navbar-brand mr-md-auto" href="#">
-                    <img src="./img/logo-zh.png" width="auto" height="47px" alt="">
+            <div class="col-lg-2 com-sm-12 d-flex pl-sm-0">
+                <button class="d-block d-sm-none border-0 mr-3" type="button">
+
+                    <i class="fa-solid fa-arrow-right-long text-secondary" style="font-size: 30px;"></i>
+                </button>
+
+                <a class="navbar-brand mr-md-auto" href="#" alt="">
+                    <img src="./img/logo-zh.png" width="auto" height="47px">
                 </a>
+                <button class="navbar-toggler d-block d-sm-none ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+
+                    <i class="fa-solid fa-bars text-secondary" style="font-size: 36px;"></i>
+                </button>
             </div>
-            <div class="col-11 d-flex justify-content-center">
-                <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead " style="letter-spacing: 1.5px;">
-                    <a class="p-2 text-dark text-decoration-none active" href="#">Foundations(基礎)</a>
-                    <a class="p-2 text-dark text-decoration-none" href="./design/design.html">Design(設計)</a>
-                    <a class="p-2 text-dark text-decoration-none " href="#">Components(元件)</a>
-                    <a class="p-2 text-dark text-decoration-none disabled" href="#">Patterns(模板)</a>
+            <div class="col-lg-10 col-sm-12 d-flex justify-content-center">
+                <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead w-sm-100 d-none d-sm-block"
+                    style="letter-spacing: 1.5px;">
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  active"
+                        href="#">Foundations(基礎)</a>
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none"
+                        href="./design/design.html">Design(設計)</a>
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none " href="#">Components(元件)</a>
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
+                        href="#">Patterns(模板)</a>
                 </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <div class=" d-flex justify-content-sm-start justify-content-md-center ">
+                        <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead w-sm-100"
+                            style="letter-spacing: 1.5px;">
+                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  active"
+                                href="#">Foundations(基礎)</a>
+                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none"
+                                href="./design/design.html">Design(設計)</a>
+                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
+                                href="#">Components(元件)</a>
+                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
+                                href="#">Patterns(模板)</a>
+                        </nav>
+
+
+
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
         <div class="main-body ">
             <div class="container-xl ">
                 <div class="row " style="font-size: 18px;">
-                    <div class="col-2 bg-grayblue pt-5 " style="letter-spacing: 1.5px;line-height: 36px;">
-                        <li class="slidemenu " style="list-style: none;">
+
+
+                    <div class="col-md-2 col-sm-12 bg-grayblue pt-md-5 ml-4 ml-md-0 "
+                        style="letter-spacing: 1.5px;line-height: 36px;">
+
+                        <li class="slidemenu mt-3 mt-md-0" style="list-style: none;">
                             <a href="#satu" title="Manage Your Team" data-toggle="collapse"
                                 class=" font-weight-bolder text-dark text-decoration-none">
                                 <span>About IIoT</span>
                             </a>
-                            <ul class="sidebar-nav sidebar-subnav collapse " id="satu"
+                            <!-- 768px以上 flex-column collapse available  -->
+                            <ul class="sidebar-nav sidebar-subnav d-none d-lg-block " id="satu"
                                 style="list-style: none;margin-left: -2.5rem;">
 
                                 <li class="active">
@@ -108,9 +101,29 @@
                                     </a>
                                 </li>
                             </ul>
+
+                            <!-- 768px以下 d-flex   collapse not allowed -->
+                            <ul class="sidebar-nav sidebar-subnav flex-xl-column d-flex d-none d-md-block d-lg-none " id=""
+                                style="list-style: none;margin-left: -2.5rem;">
+
+                                <li class="active">
+                                    <a href="#" title="" class="text-decoration-none text-dark">
+                                        <span>技術</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                        <span>了解更多</span>
+                                    </a>
+                                </li>
+                            </ul>
+
                         </li>
                     </div>
-                    <div class="col-10 pt-5 px-4 bg-white border-left border-right shadow-sm" style="height:85vh">
+
+
+                    <div class="col-md-10 col-sm-12 pt-5 px-4 bg-white border-left border-right shadow-sm"
+                        style="height:85vh">
                         &emsp; &emsp;所有不同裝置與感測資料中華電信企業客戶分公司物聯網平臺可收集不同感測裝置的資料，
                         並從單一平臺做存取。平臺提供符合物聯網國際ＯＧＣ標準之API，讓使用者可透過簡單的API，
                         將資料上傳至平臺，安全且有效率。平臺使用RESTful、MQTT、WebSocket、CoAP與Kafka 做為協定， 並使用JSON當作資料交換格式，提供使用者最簡便且快速的方法與平臺介接。
@@ -140,6 +153,8 @@
             $(this).collapse('hide');
         });
     });
+
+
 </script>
 
 </html>
