@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/all.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
     <title>IIOT Design System</title>
 
 
@@ -20,24 +21,27 @@
     <div class="wrapper">
 
 
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
+        <div class="d-flex flex-column flex-lg-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
             <div class="col-lg-2 com-sm-12 d-flex pl-sm-0">
-                <button class="d-block d-sm-none border-0 mr-3" type="button">
+                <button class="d-md-block d-lg-none  border-0 mr-3 bg-transparent" type="button" data-toggle="collapse"
+                    data-target="#slidemenucontent" aria-controls="slidemenucontent" aria-expanded="true"
+                    aria-label="Toggle mobile slidemenu">
 
-                    <i class="fa-solid fa-arrow-right-long text-secondary" style="font-size: 30px;"></i>
+                    <i class="fa-solid fa-bars text-secondary" style="font-size: 30px;"></i>
                 </button>
 
                 <a class="navbar-brand mr-md-auto" href="#" alt="">
                     <img src="../img/logo-zh.png" width="auto" height="47px">
                 </a>
-                <button class="navbar-toggler d-block d-sm-none ml-auto" type="button" data-toggle="collapse"
+                <button class="navbar-toggler d-block d-sm-none ml-auto border-0" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
                     aria-label="Toggle navigation">
+                    <i class="fa-solid fa-square-caret-down text-secondary" style="font-size: 36px;"></i>
 
-                    <i class="fa-solid fa-bars text-secondary" style="font-size: 36px;"></i>
                 </button>
             </div>
             <div class="col-lg-10 col-sm-12 d-flex justify-content-center">
+                <!-- top menu < 768px , d-none >768px  -->
                 <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead w-sm-100 d-none d-sm-block"
                     style="letter-spacing: 1.5px;">
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
@@ -49,6 +53,7 @@
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
                         href="#">Patterns(模板)</a>
                 </nav>
+                <!-- top menu > 768px , show >768px -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <div class=" d-flex justify-content-sm-start justify-content-md-center ">
@@ -79,137 +84,196 @@
                 <div class="row " style="font-size: 18px;">
 
 
-                    <div class="col-lg-2 d-md-3 col-sm-12 bg-grayblue pt-md-2 ml-4 ml-md-0 px-4"
+                    <div class="col-xl-2 col-lg-3 col-md-12  bg-grayblue pt-md-2 ml-4 ml-md-0 px-4 slidemenu-height"
                         style="letter-spacing: 1.5px;line-height: 36px;">
-                        <ul class="px-0">
-                            <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
+                        <div class="collapse navbar-collapse" id="slidemenucontent">
+                            <ul class="px-0">
+                                <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
 
-                                <a href="#satu" title="Manage Your Team" data-toggle="collapse"
-                                    class=" font-weight-bolder text-dark text-decoration-none pr-1">
-                                    <span>Button</span>
-                                </a>
-                                <ul class=" collapse show" id="satu" style="list-style: none;margin-left: -2.5rem;">
+                                    <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                        class=" font-weight-bolder text-dark text-decoration-none pr-1">
+                                        <span>Button</span>
+                                    </a>
+                                    <ul class=" collapse show" id="satu" style="list-style: none;margin-left: -2.5rem;">
 
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none text-dark active">
-                                            <span>[Principle]Button 顏色x動作</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="./btn-principle-default-state.html" title=""
-                                            class="text-decoration-none text-dark " disabled>
-                                            <span>[Principle]Button 默認狀態</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>[Principle]Button 形狀與位置</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>[Principle]Button Button activable & disable state 狀態</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>[Principle]Button outline activable & disable state 狀態</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>[Principle]常用incon + button </span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>[Components] ButtonList</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a href="#CardCollapse" title="Manage Your Team" data-toggle="collapse"
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none text-dark active">
+                                                <span>[Principle]Button 顏色x動作</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./btn-principle-default-state.html" title=""
+                                                class="text-decoration-none text-dark " disabled>
+                                                <span>[Principle]Button 默認狀態</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                                <span>[Principle]Button 形狀與位置</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                                <span>[Principle]Button Button activable & disable state 狀態</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                                <span>[Principle]Button outline activable & disable state 狀態</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                                <span>[Principle]常用incon + button </span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                                <span>[Components] ButtonList</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#CardCollapse" title="Manage Your Team" data-toggle="collapse"
+                                        class=" font-weight-bolder text-dark text-decoration-none pr-1 ">
+                                        <span>CardCollapse</span>
+                                    </a>
+                                    <ul class="collapse" id="CardCollapse"
+                                        style="list-style: none;margin-left: -2.5rem;">
+                                        <li class="slidemenu">
+                                            <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                                <span>[Principle]Card Collapse</span>
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu">
+                                            <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                                <span>[Components]CardCollapse</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#CheckBox" title="Manage Your Team" data-toggle="collapse"
+                                        class=" font-weight-bolder text-dark text-decoration-none pr-1">
+                                        <span>CheckBox</span>
+                                    </a>
+                                    <ul class="collapse" id="CheckBox" style="list-style: none;margin-left: -2.5rem;">
+                                        <li class="slidemenu">
+                                            <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                                <span>[Components]CheckBox</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                                <a href="#CustomDataTable" title="Manage Your Team" data-toggle="collapse"
                                     class=" font-weight-bolder text-dark text-decoration-none pr-1 ">
-                                    <span>CardCollapse</span>
+                                    <span>CustomDataTable</span>
                                 </a>
-                                <ul class="collapse" id="CardCollapse" style="list-style: none;margin-left: -2.5rem;">
+
+                                <ul class="collapse" id="CustomDataTable"
+                                    style="list-style: none;margin-left: -2.5rem;">
                                     <li class="slidemenu">
                                         <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                            <span>[Principle]Card Collapse</span>
+                                            <span>[Principle]default table</span>
                                         </a>
                                     </li>
                                     <li class="slidemenu">
                                         <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                            <span>[Components]CardCollapse</span>
+                                            <span>[Principle]card table</span>
+                                        </a>
+                                    </li>
+                                    <li class="slidemenu">
+                                        <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                            <span>[Principle]collapse table</span>
+                                        </a>
+                                    </li>
+                                    <li class="slidemenu">
+                                        <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                            <span>[Components]CustomDataTable</span>
                                         </a>
                                     </li>
                                 </ul>
-                                <a href="#CheckBox" title="Manage Your Team" data-toggle="collapse"
-                                    class=" font-weight-bolder text-dark text-decoration-none pr-1">
-                                    <span>CheckBox</span>
-                                </a>
-                                <ul class="collapse" id="CheckBox" style="list-style: none;margin-left: -2.5rem;">
-                                    <li class="slidemenu">
-                                        <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                            <span>[Components]CheckBox</span>
-                                        </a>
-                                    </li>
 
-                                </ul>
+                                </li>
 
-                            </li>
-                            <a href="#CustomDataTable" title="Manage Your Team" data-toggle="collapse"
-                                class=" font-weight-bolder text-dark text-decoration-none pr-1 ">
-                                <span>CustomDataTable</span>
-                            </a>
-
-                            <ul class="collapse" id="CustomDataTable" style="list-style: none;margin-left: -2.5rem;">
-                                <li class="slidemenu">
-                                    <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                        <span>[Principle]default table</span>
-                                    </a>
-                                </li>
-                                <li class="slidemenu">
-                                    <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                        <span>[Principle]card table</span>
-                                    </a>
-                                </li>
-                                <li class="slidemenu">
-                                    <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                        <span>[Principle]collapse table</span>
-                                    </a>
-                                </li>
-                                <li class="slidemenu">
-                                    <a href="#" title="" class="text-decoration-none text-dark disabled">
-                                        <span>[Components]CustomDataTable</span>
-                                    </a>
-                                </li>
                             </ul>
+                        </div>
 
-                            </li>
-
-                        </ul>
-
-                        </li>
                     </div>
 
 
-                    <div class="col-lg-10 col-md-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5"
-                        style="height:85vh">
-                        <p>針對不同行為，用不同顏色代表之</p>
+                    <div class="col-xl-10 col-lg-9 col-md-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5 content-height pb-3"
+                        >
 
-                        <div class="d-flex">
+                        <h4 class="pb-3">Components(元件)_[Principle]Button 顏色x動作</h4>
+                        <p class="">針對不同行為，用不同顏色代表之</p>
+                        <hr>
+                        <div class="d-flex flex-wrap">
                             <div class="color-bar bg-info mr-3 mt-2"></div>
-                            <kbd>.bg-info</kbd>
+                            <kbd class="d-inline-block mt-xs-2">.bg-info</kbd>
                         </div>
-                        <p class="mt-3">
+                        <p class="mt-3 ">
                             call to action，<span class="font-weight-bold text-code">實心按鈕</span>，多數為<span
-                                class="font-weight-bold text-code">新增/修改</span>之行為 ，
+                                class="font-weight-bold text-code">CRUD的C增加（Create）</span>之行為 ，
                             所以同時是進行<span class="font-weight-bold text-code">步驟順序引導</span>使用顏色，進入功能頁面/區塊，<span
-                                class="font-weight-bold text-code">第一順位行為</span>
+                                class="font-weight-bold text-code">第一順位行為</span>，不具引導順序button event不使用實心按鈕，使用
+                                <span class="text-code">btn-outline-*</span>。
                         </p>
+                        
+                        <span class="h4 mt-4 bg-yellow p-1" style="letter-spacing: 1px;">Example 範例 <span class="h6 ">live preview需要登入<a
+                                    class="h6" href="https://iiot-qa.chte.cloud/iot/login"
+                                    target="_blank">IIoT才能瀏覽</a></span> </span>
+                        <div class="d-flex flex-wrap mt-3 border p-3">
+                            <div class="d-flex flex-column">
+                                <button type="button" class="btn btn-info btn-md mr-3 text-base"
+                                    style="height: 38px;width:105.33px ;">+ 建立專案 </button>
+                                <a class="mt-3" href="https://iiot-qa.chte.cloud/iot/project" target="_blank">live preview</a>
+                            </div>
 
-                        <p class="h4">Example 範例</p>
+                            <div class="d-flex flex-column">
+                                <button type="button" class="btn btn-info btn-md mr-3 text-base"
+                                    style="height: 38px;width:137.33px ;">+ 新增通知對象 </button>
+                                <a class="mt-3" href="https://iiot-qa.chte.cloud/iot/notifyGroupManage" target="_blank">live
+                                    preview</a>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <button type="button" class="btn btn-info btn-md mr-3 text-base "
+                                    style="height: 38px;width: 105.33px;"> + 新增規格 </button>
+                                <a class="mt-3" href="https://iiot-qa.chte.cloud/iot/rule" target="_blank">live preview</a>
+                            </div>
 
+                        </div>
+                        <div class="p-3 bg-grey mt-3">
+                            <span> <</span><span class="drak-blue">button</span><span>></span><span
+                                        class="text-info">class</span><span>="</span>
+                                    <span class="text-code">btn-info text-base btn btn-md</span><span>">...</  </span>
+                              
+                                    <span><</span><span>/</span><span class="drak-blue">button</span><span>></span>
+                        </div>
+                        <hr>
+                        <div class="d-flex flex-wrap mt-3">
+                            <div class="color-bar bg-success mr-3 mt-2"></div>
+                            <kbd class="d-inline-block mt-xs-2">.bg-info</kbd>
+                        </div>
+                        <p class="mt-3">多數為CRUD之U改正（Update，意為「更新」）。</p>
+                        <div class="d-flex flex-wrap mt-3 border p-3">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-content-center">
+                                <button type="button" class="btn btn-outline-success btn-md mr-4 text-base "
+                                    style="height: 38px;width:77.4px"> <i class="cil-pen"></i>編輯 </button></div>
+                                <a class="mt-3" href="https://iiot-qa.chte.cloud/iot/notifyGroupManage" target="_blank">live preview</a>
+                               
+                            </div>
+
+                         
+
+                        </div>
+                        <div class="p-3 bg-grey mt-3">
+                            <span> <</span><span class="drak-blue">button</span><span>></span><span
+                            class="text-info">class</span><span>="</span>
+                        <span class="text-code">btn-outline-success text-base btn btn-md</span><span>">...</  </span>
+                  
+                        <span><</span><span>/</span><span class="drak-blue">button</span><span>></span>
+                        </div>
                     </div>
                 </div>
 
@@ -229,13 +293,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+
+    <script src="../js/all.js"></script>
+
 </body>
 <script>
-    $('.collapse').on('show.bs.collapse', function () {
-        $('.collapse.in').each(function () {
-            $(this).collapse('hide');
-        });
-    });
+    // $('.collapse').on('show.bs.collapse', function () {
+    //     $('.collapse.in').each(function () {
+    //         $(this).collapse('hide');
+    //     });
+    // });
+
+
+    // // < 992px slide menu show出 , >992px btn控制 , 預設menu close
+
+    // const mediaQuery = window.matchMedia("(min-width: 992px)");
+    // var openmenu = document.getElementById('slidemenucontent');
+
+
+    // function togglemenu(mediaQuery) {
+    //     if (mediaQuery.matches) {
+    //         openmenu.classList.add("show");
+
+    //     } else {
+    //         openmenu.classList.remove("show");
+    //     }
+    // }
+
+    // mediaQuery.addListener(togglemenu);
+    // togglemenu(mediaQuery);
 
 
 </script>
