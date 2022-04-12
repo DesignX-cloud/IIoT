@@ -4,6 +4,21 @@
     background-color: #39f !important;
 }
 
+.btn-info{
+    background-color: #39f !important;
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
+}
+
+.btn-outline-success{
+    
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
+}
+
+body p{
+    color: #454d55;
+}
+
+
 .wrapper {
     display: flex;
     flex: 1;
@@ -19,8 +34,41 @@
     height: 85vh;
 }
 
+.content-height{
+    max-height:85vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
 .bg-grayblue {
     background-color: #ebeef4;
+}
+
+
+.bg-grey{
+    background-color: #ebebeb;
+}
+
+.drak-blue{
+    color: #2f6f9f;
+}
+
+.text-info{
+    color: #007bff;
+}
+
+.text-primary{
+    color:#321FDB ;
+}
+
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.bg-yellow{
+    background-color: rgb(242, 255, 3);
 }
 
 /* top menu active */
@@ -109,4 +157,26 @@ a.text-dark:hover {
     width: 150px;
     height: 10px;
    
+}
+
+/* slidemenu scroll bar  */
+
+.slidemenu-height{
+    max-height:768px;
+    overflow-y:scroll;
+    overflow-x:hidden
+}
+
+@media (max-width:576px) {
+    .slidemenu-height{
+        max-height:350px;
+        overflow-y:scroll;
+        overflow-x:hidden
+    }
+}
+
+@media (max-width:576px) {
+    .mt-xs-2{
+        margin-top: 1rem;
+    }
 }
