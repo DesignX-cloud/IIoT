@@ -20,21 +20,23 @@
     <div class="wrapper">
 
 
-        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
+        <div class="d-flex flex-column flex-lg-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
             <div class="col-lg-2 com-sm-12 d-flex pl-sm-0">
-                <button class="d-block d-sm-none border-0 mr-3" type="button">
+                <button class="d-md-block d-lg-none bg-transparent border-0 mr-3" type="button" type="button" data-toggle="collapse"
+                    data-target="#slidemenucontent" aria-controls="slidemenucontent" aria-expanded="true"
+                    aria-label="Toggle mobile slidemenu">
 
-                    <i class="fa-solid fa-arrow-right-long text-secondary" style="font-size: 30px;"></i>
+                    <i class="fa-solid fa-bars text-secondary" style="font-size: 30px;"></i>
                 </button>
 
                 <a class="navbar-brand mr-md-auto" href="#" alt="">
                     <img src="./img/logo-zh.png" width="auto" height="47px">
                 </a>
-                <button class="navbar-toggler d-block d-sm-none ml-auto" type="button" data-toggle="collapse"
+                <button class="navbar-toggler d-block d-sm-none ml-auto border-0" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
                     aria-label="Toggle navigation">
+                    <i class="fa-solid fa-square-caret-down text-secondary" style="font-size: 36px;"></i>
 
-                    <i class="fa-solid fa-bars text-secondary" style="font-size: 36px;"></i>
                 </button>
             </div>
             <div class="col-lg-10 col-sm-12 d-flex justify-content-center">
@@ -44,7 +46,8 @@
                         href="#">Foundations(基礎)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none"
                         href="./design/design.html">Design(設計)</a>
-                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none " href="./components/components.html">Components(元件)</a>
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
+                        href="./components/components.html">Components(元件)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
                         href="#">Patterns(模板)</a>
                 </nav>
@@ -78,37 +81,37 @@
                 <div class="row " style="font-size: 18px;">
 
 
-                    <div class="col-md-2 col-sm-12 bg-grayblue pt-md-2 ml-4 ml-md-0 px-4"
+                    <div class="col-xl-2 col-lg-3 col-md-12 bg-grayblue pt-md-2 ml-4 ml-md-0 px-4 slidemenu-height"
                         style="letter-spacing: 1.5px;line-height: 36px;">
+                        <div class="collapse navbar-collapse" id="slidemenucontent">
+                            <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
+                                <a href="#satu" title="Manage Your Team" data-toggle="collapse" aria-expanded="false"
+                                    class=" font-weight-bolder text-dark text-decoration-none">
+                                    <span>About IIoT</span>
+                                </a>
+                                <!-- 768px以上 flex-column collapse available  -->
+                                <ul class="collapse" id="satu" style="list-style: none;margin-left: -2.5rem;">
 
-                        <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
-                            <a href="#satu" title="Manage Your Team" data-toggle="collapse" aria-expanded="false"
-                                class=" font-weight-bolder text-dark text-decoration-none">
-                                <span>About IIoT</span>
-                            </a>
-                            <!-- 768px以上 flex-column collapse available  -->
-                            <ul class="collapse" id="satu"
-                                style="list-style: none;margin-left: -2.5rem;">
+                                    <li class="active">
+                                        <a href="#" title="" class="text-decoration-none text-dark">
+                                            <span>技術</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
+                                            <span>了解更多</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
-                                <li class="active">
-                                    <a href="#" title="" class="text-decoration-none text-dark">
-                                        <span>技術</span>
-                                    </a>
-                                </li>
-                                <li class="">
-                                    <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                        <span>了解更多</span>
-                                    </a>
-                                </li>
-                            </ul>
 
-                    
 
-                        </li>
+                            </li>
+                        </div>
                     </div>
 
 
-                    <div class="col-md-10 col-sm-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5"
+                    <div class="col-xl-10 col-lg-9 col-md-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5"
                         style="height:85vh">
                         &emsp; &emsp;所有不同裝置與感測資料中華電信企業客戶分公司物聯網平臺可收集不同感測裝置的資料，
                         並從單一平臺做存取。平臺提供符合物聯網國際ＯＧＣ標準之API，讓使用者可透過簡單的API，
@@ -132,13 +135,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+    <script src="./js/all.js"></script>
 </body>
 <script>
-    $('.collapse').on('show.bs.collapse', function () {
-        $('.collapse.in').each(function () {
-            $(this).collapse('hide');
-        });
-    });
+    // $('.collapse').on('show.bs.collapse', function () {
+    //     $('.collapse.in').each(function () {
+    //         $(this).collapse('hide');
+    //     });
+    // });
 
 
 </script>
