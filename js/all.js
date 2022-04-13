@@ -22,3 +22,9 @@ function togglemenu(mediaQuery) {
 
 mediaQuery.addListener(togglemenu);
 togglemenu(mediaQuery);
+
+// tooltips
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
