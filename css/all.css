@@ -9,6 +9,19 @@
     box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
 }
 
+.border-info{
+    border-color: #39f !important;
+}
+
+.text-info{
+    color: #39f  !important;
+}
+.btn-outline-info{
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
+    color: #39f  !important;
+    border-color: #39f  !important;
+}
+
 .btn-outline-success{
     
     box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
@@ -45,9 +58,10 @@ body p{
 }
 
 .content-height{
-    max-height:85vh;
+   height:85vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    
     
 }
 
@@ -172,6 +186,19 @@ a.text-dark:hover {
    
 }
 
+.red-line{
+    width: 100%;
+    height: 5px;
+    
+}
+
+.btn-outline-danger.disabled, .btn-outline-danger:disabled {
+    background-color: #ebeef4;
+    color: #b5b5b5;
+    border-color: #b5b5b5;
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);
+}
+
 /* slidemenu scroll bar  */
 
 .slidemenu-height{
@@ -191,5 +218,17 @@ a.text-dark:hover {
 @media (max-width:576px) {
     .mt-xs-2{
         margin-top: 1rem;
+    }
+}
+
+@media (max-width:992px) {
+    .w-lg-50{
+        width: 50% !important;
+    }
+}
+
+@media (max-width:568px) {
+    .w-sm-100{
+        width: 100% !important;
     }
 }
