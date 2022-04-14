@@ -249,6 +249,11 @@ a.text-dark:hover {
 
 /* 手機模式  */
 .touch-action:hover{
-    transform: scale(1.5); 
+    transform: scale(1.7); 
 }
 
+@media (max-width:576px) {
+    .mt-sm-5{
+        margin-top: 2.5rem;
+    }
+}
