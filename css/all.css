@@ -248,6 +248,7 @@ a.text-dark:hover {
 
 
 /* 手機模式  */
-.touch-action{
-    touch-action:pan-x pan-y pinch-zoom;
+.touch-action:hover{
+    transform: scale(1.5); 
 }
+
