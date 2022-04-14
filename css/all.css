@@ -253,7 +253,7 @@ a.text-dark:hover {
 }
 
 @media (max-width:576px) {
-    .mt-sm-5{
+    .mt-xs-5{
         margin-top: 2.5rem;
     }
 }
