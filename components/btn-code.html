@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- COREUI icon CDN-->
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
-    <!-- 網頁頁枚標籤 -->
-    <link rel="icon" href="../img/favicon.ico" />
+
 
     <title>IIOT Design System</title>
-
+    <!-- 網頁頁枚標籤 -->
+    <link rel="icon" href="../favicon.ico" />
 
 </head>
 
@@ -104,7 +104,8 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="./btn-principle-default-state.html" title="" class="text-decoration-none text-dark " disabled>
+                                        <a href="./btn-principle-default-state.html" title=""
+                                            class="text-decoration-none text-dark " disabled>
                                             <span class="text-break">[Principle]Button 默認狀態</span>
                                         </a>
                                     </li>
@@ -114,13 +115,14 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="./btm-principle-shape.html" title="" class="text-decoration-none text-dark " disabled>
+                                        <a href="./btm-principle-shape.html" title=""
+                                            class="text-decoration-none active  " disabled>
                                             <span class="text-break">[Documentation]Button html & css 組成</span>
                                         </a>
                                     </li>
-                                  
+
                                     <li class="">
-                                        <a href="#" title="" class="text-decoration-none  active  " disabled>
+                                        <a href="./btn-icon.html" title="" class="text-decoration-none  text-dark  " disabled>
                                             <span class="text-break">[Principle]常用icon + button </span>
                                         </a>
                                     </li>
@@ -333,47 +335,313 @@
 
                     <div
                         class="col-xl-10 col-lg-9 col-md-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5 content-height pb-3">
-                        <h4 class="pb-3">Button - shape 按鈕形狀與位置</h4>
+                        <!-- <h4 class="pb-3">Button - shape 按鈕形狀與位置</h4> -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="">Home</a></li>
+                                <li class="breadcrumb-item"><a href="">Components</a></li>
+                                <li class="breadcrumb-item "><a href="">Button</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">[Documentation]Button html & css
+                                    組成</li>
+                            </ol>
+                        </nav>
                         <hr>
-                        <div class="d-block"><span class="h5">(1) <span class="text-info">新增</span> 專案/裝置/規則等 <span class="text-info">初始起始第一個動作 </span> Button - default position ，設狀態為置於<span class="text-code">右上角</span> </div>
-                    
-                        <p class="h5 text-sencondary mt-3">Example 範例</p>
-                        <div class="d-flex flex-column  ">
-                            <div class="mt-3 border">
-                                <img src="../img/07.jpg" class="card-img-top w-75 p-4" alt="...">
+                        <div class="d-block"><span class="h3">實心填滿button，</div>
+                        <p>目前只有採用<span class="text-code bg-grey">.btn- info</span>
+                            功能頁面第一個action，引導user開始動作或接下來動作 </p>
+
+                        <p class="h5 text-sencondary mt-3 d-block">Example 範例 <span class="text-code bg-grey">.btn-
+                                info</span></p>
+                        <p><span class="text-code bg-grey">.btn- info</span>為activable state <span
+                                class="text-code bg-grey">.btn-info.disabled, .btn-info:disabled</span> 為disable
+                            state，button disabled狀態 全部加上<span class="text-code bg-grey"> opicy:.65;</span></p>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                      <span class="text-info"> class="</span>  <span>btn btn-info</span><span class="text-dark">"></span>
+                                    </code>
+                                    <!-- <p class="text-code">.btn-info </p> -->
+                                    <code>
+                                        <button type="button" class="btn btn-info">+ 建立新專案</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #fff;</p>
+                                       <p class="mb-1">background-color: #39f;</p>
+                                       <p class="mb-1">border-color: #39f;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
+                                </div>
                             </div>
-                            <div class="mt-3 border">
-                                <img src="../img/08.jpg" class="card-img-top w-75 p-4" alt="...">
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
+                                    <!-- <p class="text-code">.btn-info.disabled, .btn-info:disabled </p> -->
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-info</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-info" disabled>+ 建立新專案</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #fff;</p>
+                                        <p class="mb-1">background-color: #39f;</p>
+                                        <p class="mb-1">border-color: #39f;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+                                        <p  class="mb-1">opacity: 0.65;</p>
+                                     
+                                    </code>
+                                </div>
                             </div>
-                           
+
                         </div>
                         <hr class="mt-3">
-                        <div class="d-block"><span class="h5">(2)  Button in card卡片header上的 <span class="text-info">icon button</span></div>
-                       <p>非<span class="text-info">文字導覽button，單一icon 顯示button</span>，使用 <span class="text-code bg-grey">.rounded-circle</span>  圓形按紐 </p>
+                        <div class="d-block"><span class="h3">非實心填滿button</div>
+                        <p>樣式沿用Boostrap設計，但加強active和disable狀態區隔，<span class="font-weight-bold">active</span>狀態加上
+                            <span class="font-weight-bold">shadow</span>，disabled狀態則拿掉shadow
+                        </p>
 
-                        <p class="h5 text-sencondary">Example 範例</p>
+                        <p class="h5 text-sencondary">Example 範例 - info color</p>
                         <div class="row mt-2 ">
-                            <div class="col-lg-12 col-xl-6 pr-5 ">
-                               
-                                <div class="d-flex flex-column  mt-3 p-3">
-                                  
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span>btn btn-outline-info</span><span class="text-dark">"></span>
+                                    </code>
 
-                                   
-                                    <img src="../img/09.jpg" class="card-img-top  " alt="...">
+                                    <code>
+                                        <button type="button" class="btn btn-outline-info" >Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #39f;</p>
+                                       <p class="mb-1">border-color: #39f;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
                                 </div>
                             </div>
-                            <div class="col-lg-12 col-xl-6 border">
-                              
-                                <div class="d-flex flex-column  mt-3 px-5">
-                                   
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
 
-                                  
-                                    <img src="../img/10.jpg" class="card-img-top w-75 " alt="...">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-1">btn btn-outline-info</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-outline-info " disabled>Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #b5b5b5;</p>
+                                        <p class="mb-1">background-color: #ebeef4;</p>
+                                        <p class="mb-1">border-color: #b5b5b5;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+
+                                    </code>
                                 </div>
                             </div>
-                           
+
                         </div>
-                       
+                        <hr class="mt-3">
+                        <p class="h5 text-sencondary">Example 範例 - success color</p>
+                        <div class="row mt-2 ">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="">btn btn-outline-success</span><span class="text-dark">"></span>
+                                    </code>
+
+                                    <code>
+                                        <button type="button" class="btn  btn-outline-success " > Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #39f;</p>
+                                       <p class="mb-1">border-color: #39f;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
+
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-success</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-outline-info " disabled>Button </button>
+                                     
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #b5b5b5;</p>
+                                        <p class="mb-1">background-color: #ebeef4;</p>
+                                        <p class="mb-1">border-color: #b5b5b5;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+
+                                    </code>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="mt-3">
+                        <p class="h5 text-sencondary">Example 範例 - primary color</p>
+                        <div class="row mt-2 ">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-primary</span><span class="text-dark">"></span>
+                                    </code>
+
+                                    <code>
+                                        <button type="button" class="btn  btn-outline-primary " > Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #321fdb;</p>
+                                       <p class="mb-1">border-color: #321fdb;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
+
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-primary</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-outline-primary " disabled>Button </button>
+                                     
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #b5b5b5;</p>
+                                        <p class="mb-1">background-color: #ebeef4;</p>
+                                        <p class="mb-1">border-color: #b5b5b5;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+
+                                    </code>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="mt-3">
+                        <p class="h5 text-sencondary">Example 範例 - warning color</p>
+                        <div class="row mt-2 ">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-warning</span><span class="text-dark">"></span>
+                                    </code>
+
+                                    <code>
+                                        <button type="button" class="btn  btn-outline-warning" > Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #f9b115;</p>
+                                       <p class="mb-1">border-color: #f9b115;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
+
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-warning</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-outline-warning " disabled>Button </button>
+                                     
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #b5b5b5;</p>
+                                        <p class="mb-1">background-color: #ebeef4;</p>
+                                        <p class="mb-1">border-color: #b5b5b5;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+
+                                    </code>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="mt-3">
+                        <p class="h5 text-sencondary">Example 範例 - danger color</p>
+                        <div class="row mt-2 ">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="d-flex flex-column">
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-danger</span><span class="text-dark">"></span>
+                                    </code>
+
+                                    <code>
+                                        <button type="button" class="btn  btn-outline-danger" > Button</button>
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                       <p class="mb-1">color: #e55353;</p>
+                                       <p class="mb-1">border-color:#e55353;</p>
+                                       <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);</p>
+                                    
+                                   </code>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 mt-3 mt-md-0">
+                                <div class="d-flex flex-column">
+
+                                    <code class="language-html bg-grey p-2 my-2 py-2" data-lang="html">
+                                        <span><</span><span class="drak-blue mr-2">button</span><span class="text-info mr-1">type</span>=<span class="text-code">  button</span>
+                                        <span class="text-info"> class="</span>  <span class="mr-2">btn btn-outline-danger</span><span class="text-info">disabled</span><span class="text-dark">"></span>
+                                    </code>
+                                    <code>
+                                        <button type="button" class="btn btn-outline-danger " disabled>Button </button>
+                                     
+                                    </code>
+
+
+                                    <code class=" bg-grey p-2 my-2">
+                                        <p class="mb-1">color: #b5b5b5;</p>
+                                        <p class="mb-1">background-color: #ebeef4;</p>
+                                        <p class="mb-1">border-color: #b5b5b5;</p>
+                                        <p class="mb-1">box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%);</p>
+
+                                    </code>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
 
@@ -384,7 +652,7 @@
             <span>中華電信股份有限公司版權所有@</span><span>2022~</span>
             <div class="float-md-right px-2"><a href="https://www.cht.com.tw/home/consumer/privacy" target="_blank"
                     class="text-info text-decoration-none"><span>隱私權政策</span></a></div>
-                  
+
         </footer>
     </div>
 
