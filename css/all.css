@@ -9,6 +9,26 @@
     box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
 }
 
+.btn-outline-info:hover {
+    color: #fff !important;
+    background-color: #39f !important;
+    border-color: #39f !important;
+}
+
+.btn-outline-info:disabled {
+    background-color: #ebeef4 !important;
+    color: #b5b5b5 !important;
+    border-color: #b5b5b5 !important;
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%) !important;
+}
+
+.btn-outline-warning.disabled, .btn-outline-warning:disabled {
+    background-color: #ebeef4 !important;
+    color: #b5b5b5 !important;
+    border-color: #b5b5b5 !important;
+    box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 0%) !important;
+}
+
 .border-info{
     border-color: #39f !important;
 }
@@ -20,6 +40,12 @@
     box-shadow: 0 0.2rem 0.2rem rgb(0 0 0 / 15%);
     color: #39f  !important;
     border-color: #39f  !important;
+}
+
+.btn-outline-info:disabled, .btn-outline-warning:disabled, .btn-outline-primary:disabled{
+    background-color: #ebeef4 !important;
+    border-color: #b5b5b5 !important;
+    color: #b5b5b5 !important;
 }
 
 .btn-outline-success{
@@ -247,10 +273,15 @@ a.text-dark:hover {
 }
 
 
-/* 手機模式  */
-.touch-action:hover{
-    transform: scale(1.7); 
+/* 手機模式 圖片手指點擊放大 */
+
+@media (max-width:576px) {
+    .touch-action:hover{
+        transform: scale(1.7); 
+    }
+     
 }
+
 
 @media (max-width:576px) {
     .mt-xs-5{
