@@ -115,8 +115,7 @@
                                         </a>
                                     </li>
                                     <li class="">
-                                        <a href="./btn-code.html" title=""
-                                            class="text-decoration-none  text-dark  ">
+                                        <a href="./btn-code.html" title="" class="text-decoration-none  text-dark  ">
                                             <span class="text-break">[Documentation]Button html & css 組成</span>
                                         </a>
                                     </li>
@@ -324,6 +323,19 @@
                                         </a>
                                     </li>
                                 </ul>
+                                <a href="#is8n" title="點擊打開is8n menu" data-toggle="collapse"
+                                    class=" font-weight-bolder text-dark text-decoration-none pr-1 d-block">
+                                    <span class="text-break">is8n</span>
+                                </a>
+                                <ul class="collapse" id="is8n" style="list-style: none;margin-left: -2.5rem;">
+
+
+                                    <li class="slidemenu">
+                                        <a href="#" title="" class="text-decoration-none text-dark disabled">
+                                            <span class="text-break">[Components]is8n</span>
+                                        </a>
+                                    </li>
+                                </ul>
 
                             </li>
                         </div>
@@ -347,18 +359,16 @@
                         <hr>
                         <div class="d-block"><span class="h3">Button + icon</div>
                         <p>Button + icon 兩種使用方法</p>
-                        <p>1.使用IIoT物連網自製 ButtonList component，需搭配<a href="https://icons.coreui.io/icons/"
+                        <p>1.使用IIoT物聯網自製 ButtonList component，搭配<a href="https://icons.coreui.io/icons/"
                                 target="_blank">COREUI icon</a>使用，
                             <a href="https://github.com/coreui/coreui-icons" target="_blank">github</a>
                         </p>
-                        <p>2.若 <span>COREUI icon</span>找不到適當icon使用，需自行使用<kbd class="mx-2">
-                                < CButton>
-                                    < /CButton>
-                            </kbd>另外組合，更多icon可參考<a href="https://react-icons.github.io/react-icons/icons?name=go"
-                                target="_blank">More ICON</a></p>
+                        <p>2.若 <span>COREUI icon</span>找不到適當icon使用，更多icon可參考<a
+                                href="https://react-icons.github.io/react-icons/icons?name=go" target="_blank">More
+                                ICON</a></p>
 
 
-                        <p>目前在IIoT物連網採使用<span class="font-weight-bold">COREUI</span>元件<kbd class="mx-2">
+                        <p>目前在IIoT物聯網採使用<span class="font-weight-bold">COREUI</span>元件<kbd class="mx-2">
                                 < CButton>
                                     < /CButton>
                             </kbd>與<kbd class="ml-2">
@@ -366,140 +376,235 @@
                             </kbd>，製程的 component <span class="font-weight-bold">ButtonList</span> 引用，詳細使用方法參考 <a
                                 href="#">[Components] ButtonList</a> </p>
                         <hr>
-                        <p class="h4 text-sencondary mt-4">1.使用IIoT物連網自製 ButtonList component</p>
+                        <p class="h4 text-sencondary mt-4">1.使用IIoT物聯網自製 ButtonList component</p>
 
                         <p>
                             因為icon 已使用props包在元件裡面，只要把對應icon class填入如: <span class="bg-grey p-1 text-code"> icon:
                                 'cil-plus'</span>
                         </p>
-                        <div class="bg-grey p-3 ">
-                            <code class="">
-                            <p> < CButton ></p>
-                            <p> color={btn.color}</p>
-                            <p>size={btn.size || 'md'}</p>
-                            <p> onClick={() => btn.click(formValue)}</p>
-                            <p>className={`${btn.className} text-base`}</p>
-                            <p> disabled={btn.disabled}</p>
-                            <p> variant={btn.variant || ''}></p>                       
-                            <p>{btn.icon ? (</p>
-                            <p> typeof btn.icon === 'object' ? (</p>
-                            <p> btn.icon ) : (  </p>
-                            <p class="text-code">< CIcon name={btn.icon}</p>
-                            <p>size={btn.size === 'md' ? '' : btn.size || 'sm'}</p>
-                            <p>/>)) : ('')}</p>
-                            <p> {btn.text ? (</p>
-                            <p>  < span  className={`align-bottom d-${</p>
-                            <p>btn.size</p>
-                            <p> }-down-none align-text-top text-xs-none`}></p>
-                            <p> {btn.text}</p>
-                            <p>< /span></p>
-                            <p> ) : ( '' )}</p>
-                            <p> < /CButton></p>
-                            
-                        </code>
 
-                           
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button
+                                            class="accordion-button btn btn-link btn-block text-left d-flex justify-content-between"
+                                            type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            ButtonList component React code
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="bg-grey p-3 ">
+                                            <code class="">
+                                            <p> < CButton ></p>
+                                            <p> color={btn.color}</p>
+                                            <p>size={btn.size || 'md'}</p>
+                                            <p> onClick={() => btn.click(formValue)}</p>
+                                            <p>className={`${btn.className} text-base`}</p>
+                                            <p> disabled={btn.disabled}</p>
+                                            <p> variant={btn.variant || ''}></p>                       
+                                            <p>{btn.icon ? (</p>
+                                            <p> typeof btn.icon === 'object' ? (</p>
+                                            <p> btn.icon ) : (  </p>
+                                            <p class="text-code">< CIcon name={btn.icon}</p>
+                                            <p>size={btn.size === 'md' ? '' : btn.size || 'sm'}</p>
+                                            <p>/>)) : ('')}</p>
+                                            <p> {btn.text ? (</p>
+                                            <p>  < span  className={`align-bottom d-${</p>
+                                            <p>btn.size</p>
+                                            <p> }-down-none align-text-top text-xs-none`}></p>
+                                            <p> {btn.text}</p>
+                                            <p>< /span></p>
+                                            <p> ) : ( '' )}</p>
+                                            <p> < /CButton></p>
+                                            
+                                        </code>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
                         </div>
-                        <p class="h5 mt-4">IIoT常用ICON</p>
-                        <div class="row">
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
+                        <p class="h5 mt-4">IIoT常用ICON - COREUI</p>
+                        <div class="row mt-4">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
                                 <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
-                                <div class="border-0">
-                                    <div class="card-body border-0 ">
-                                  <span class="font-weight-bold h5">cil-pen</span> 
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-pen</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4 ">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4 ">
                                 <img src="../img/cil-user.svg" class="img-fluid" alt="...">
-                                <div class="border-0">
-                                    <div class="card-body border-0">
-                                        <span class="font-weight-bold h5">cil-user</span> 
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-user</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
-                                <div class="border-0">
-                                    <div class="card-body border-0">
-                                       
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-lock-locked.svg" class="img-fluid" alt="...">
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-lock-locked</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-hamburger-menu.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                      
+                                        <span class="font-weight-bold h6">cil-hamburger-menu</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-clock.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                       
+                                        <span class="font-weight-bold h6">cil-clock</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-sync.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                       
+                                        <span class="font-weight-bold h6">cis-sync</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-save.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                       
+                                        <span class="font-weight-bold h6">cil-save</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-x.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                        
+                                        <span class="font-weight-bold h6">cil-x</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-trash.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                        
+                                        <span class="font-weight-bold h6">cil-trash</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-settings.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                       
+                                        <span class="font-weight-bold h6">cil-settings</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-paperclip.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                       
+                                        <span class="font-weight-bold h6">cil-paperclip</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-4">
-                                <img src="../img/cil-pen.svg" class="img-fluid" alt="...">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-search.svg" class="img-fluid" alt="...">
                                 <div class="border-0">
                                     <div class="card-body border-0">
-                                      
+                                        <span class="font-weight-bold h6">cil-search</span>
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-library-add.svg" class="img-fluid" alt="...">
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-library-add</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4 ">
+                                <img src="../img/cil-link-broken.svg" class="img-fluid" alt="...">
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-link-broken</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-2 col-sm-4 col-4">
+                                <img src="../img/cil-calendar.svg" class="img-fluid" alt="...">
+                                <div class="border-0 px-0">
+                                    <div class="card-body border-0 px-0">
+                                        <span class="font-weight-bold h6">cil-calendar</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <p class="h5 mt-4">IIoT常用ICON - 非COREUI</p>
+                        <div class=" mt-4">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+                                    <i class="fa-solid fa-location-dot" style="font-size: 48px;"></i>
+                                    <div class="border-0 px-0">
+                                        <div class="card-body border-0 px-0">
+                                            <div class="bg-grey p-2 text-code">
+
+                                                import { ImLocation } from 'react-icons/im';
+                                            </div>
+
+                                            <div class="bg-grey p-2 text-code mt-3">
+                                                text:<span><</span>
+                                                ImLocation />,
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="h5 mt-4">使用 - 非COREUI</p>
+                        <a href="https://react-icons.github.io/react-icons">更多React icon</a>
+                        <div class=" mt-1">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-6 col-md-12">
+
+                                    <div class="border-0 px-0">
+                                        <div class="card-body border-0 px-0">
+                                            <div class="bg-grey p-2 text-code">
+
+                                                import { ICON } from 'react-icons/ICON';
+                                            </div>
+
+                                            <div class="bg-grey p-2 text-code mt-3">
+                                                text:<span><</span>
+                                                ICON />,
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
 
                 </div>
