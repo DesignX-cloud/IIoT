@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- COREUI icon CDN-->
     <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
-
+    <!--google ICON CDN  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
     <title>IIOT Design System</title>
     <!-- 網頁頁枚標籤 -->
@@ -137,7 +139,8 @@
                                 </a>
                                 <ul class="collapse" id="CardCollapse" style="list-style: none;margin-left: -2.5rem;">
                                     <li class="slidemenu">
-                                        <a href="./cardcollapse_principle.html" title="" class="text-decoration-none text-dark ">
+                                        <a href="./cardcollapse_principle.html" title=""
+                                            class="text-decoration-none text-dark ">
                                             <span class="text-break">[Principle]Card Collapse</span>
                                         </a>
                                     </li>
@@ -574,8 +577,9 @@
                                             </div>
 
                                             <div class="bg-grey p-2 text-code mt-3">
-                                                text:<span><</span>
-                                                ImLocation />,
+                                                text:<span>
+                                                    << /span>
+                                                        ImLocation />,
                                             </div>
                                         </div>
                                     </div>
@@ -596,8 +600,9 @@
                                             </div>
 
                                             <div class="bg-grey p-2 text-code mt-3">
-                                                text:<span><</span>
-                                                ICON />,
+                                                text:<span>
+                                                    << /span>
+                                                        ICON />,
                                             </div>
                                         </div>
                                     </div>
@@ -606,6 +611,123 @@
                         </div>
 
                         <p class="h3 mt-4">icon挑選原則</p>
+                        <p>1.大部分Button都是outline shape狀態，基於相<a
+                                href="https://www.webguide.nat.gov.tw/News_Content.aspx?n=531&s=2989"
+                                target="_blank">似性原則</a> ， 外框線繪圖內部留白會是最佳選擇 ,
+                            <span class="font-weight-bold">regular</span> or <span class="font-weight-bold">light</span>
+                            若無外框線繪圖內部留白可選擇，可視情況選擇<span class="font-weight-bold">solid</span> or
+                            <span class="font-weight-bold">thin </span>。避免使用<span
+                                class="font-weight-bold">Duotone</span>。
+                        </p>
+
+                        <p>2.<span class="font-weight-bold">regular </span>、<span class="font-weight-bold">light
+                            </span>、<span class="font-weight-bold">solid</span>、<span
+                                class="font-weight-bold">thin</span>、<span
+                                class="font-weight-bold">Duotone</span>，樣式呈現可參考<a
+                                href="https://fontawesome.com/search?favorites=staff" target="_blank">font
+                                awesome</a>分類。此專有名詞用語來自於印刷與文字設計用語沿用到其他設計。</p>
+                        <p>3.<span class="font-weight-bold">regular </span>、<span class="font-weight-bold">light
+                            </span>、<span class="font-weight-bold">thin</span>差異在外框線粗細regular > light > thin，多數情況下<span
+                                class="font-weight-bold">regular </span>會是最好選擇，兼顧大螢幕和小螢幕呈現細節，若要選擇<span
+                                class="font-weight-bold">light </span>，
+                            須注意在不同裝置上呈現狀態。<span class="font-weight-bold">thin</span>在大尺寸螢幕上有可能看不清楚細節。</p>
+                       
+                            <p class="h5 text-sencondary  mt-3">Example 範例 - <span class="text-code">normal/regular</span>
+                            vs <span class="text-code">lighter</span> </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card-body border">
+
+                                    <p class="card-text font-weight-normal">Some quick example text to build on the card
+                                        title and make up the bulk of the card's content.
+                                        Some quick example text to build on the card title and make up the bulk of the
+                                        card's content.Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="card-body border">
+
+                                    <p class="card-text font-weight-lighter">Some quick example text to build on the
+                                        card title and make up the bulk of the card's content.Some quick example text to
+                                        build on the card title and make up the bulk of the card's content.Some quick
+                                        example text to build on the card title and make up the bulk of the card's
+                                        content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-3">5.某些solid狀態設計也有外框曲線模式，或是剪影挖空方式設計皆可斟酌採用，但<span class="font-weight-bold">solid</span>要注意小尺寸細節消失問題</p>
+                        <p class="h5 text-sencondary  mt-3">Example 範例 - solid錯誤選擇 </p>
+                        <p>使用 <a href="https://fontawesome.com/icons/cart-plus?s=solid">fontawesome fa-cart-plus </a> ，lg/normal/sm三種不同button尺寸觀看細節變化，
+                            除了lg可以清楚觀看add + 符號以外，normal/sm size表現皆不佳 。</p>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-lg">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    add cart</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    add cart</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-sm">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    add cart</button>
+                            </div>
+
+                        </div>
+                       <hr>
+                       <p class="h5 text-code">Primary choice 優先挑選</p>
+                       <p class="">外框曲線設計，放在lg/normal/sm三種不同尺寸皆能呈現清晰細節不模糊失真</p>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-lg">
+                                    <span class="material-icons " style="font-size: 20px;">
+                                        add_shopping_cart
+                                        </span>add cart
+                                    </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info">
+                                    <span class="material-icons " style="font-size: 20px;">
+                                        add_shopping_cart
+                                        </span>
+                                    add cart</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-sm">
+                                    <span class="material-icons " style="font-size: 20px;">
+                                        add_shopping_cart
+                                        </span>
+                                    add cart</button>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <p class="h5 text-code mt-4">Secondary choice 次優挑選</p>
+                        <p>雖然此icon分類在solid，但放在lg/normal/sm三種不同尺寸button皆能有很好瀏覽體驗</p>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-lg">
+                                    <i class="fa-solid fa-hourglass-empty"></i>countdown
+                                    </button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info">
+                                    <i class="fa-solid fa-hourglass-empty"></i>
+                                    countdown</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-outline-info btn-sm">
+                                    <i class="fa-solid fa-hourglass-empty"></i>
+                                    countdown</button>
+                            </div>
+
+                        </div>
                         
                     </div>
 
