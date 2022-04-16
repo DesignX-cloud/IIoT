@@ -84,9 +84,9 @@ body p{
 }
 
 .content-height{
-   height:85vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+   min-height:65vh;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
     
     
 }
@@ -314,3 +314,5 @@ a.text-dark:hover {
     background-size: 1.25rem;
     transition: transform .2s ease-in-out;
 }
+
+
