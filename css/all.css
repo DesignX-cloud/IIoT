@@ -77,11 +77,15 @@ body p{
 }
 
 .main-body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 85vh;
+    height: 85vh; */
+    flex-basis: auto;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
+
 
 .content-height{
    min-height:65vh;
