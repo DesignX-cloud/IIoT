@@ -9,13 +9,14 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/all.css">
-
+    <!-- font-awesome icon CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-        <!-- 網頁頁枚標籤 -->
-        <link rel="icon" href="./img/favicon.ico"/>
-
+    <!-- COREYI icon CDN-->
     <title>IIOT Design System</title>
+
+    <!-- 網頁頁枚標籤 -->
+    <link rel="icon" href="./favicon.ico" />
+
 
 
 </head>
@@ -26,7 +27,7 @@
 
         <div class="d-flex flex-column flex-lg-row align-items-center p-3 px-md-4  border-bottom shadow-sm ">
             <div class="col-lg-2 com-sm-12 d-flex pl-sm-0">
-                <button class="d-md-block d-lg-none bg-transparent border-0 mr-3" type="button" type="button" data-toggle="collapse"
+                <button class="d-lg-none d-xl-block border-0 mr-3 bg-transparent" type="button" data-toggle="collapse"
                     data-target="#slidemenucontent" aria-controls="slidemenucontent" aria-expanded="true"
                     aria-label="Toggle mobile slidemenu">
 
@@ -39,17 +40,17 @@
                 <button class="navbar-toggler d-block d-sm-none ml-auto border-0" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
                     aria-label="Toggle navigation">
-                    <i class="fa-solid fa-square-caret-down text-secondary" style="font-size: 36px;"></i>
 
+                    <i class="fa-solid fa-square-caret-down text-secondary" style="font-size: 36px;"></i>
                 </button>
             </div>
             <div class="col-lg-10 col-sm-12 d-flex justify-content-center">
                 <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead w-sm-100 d-none d-sm-block"
                     style="letter-spacing: 1.5px;">
-                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  active"
-                        href="#">Foundations(基礎)</a>
-                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none"
-                        href="./design/design.html">Design(設計)</a>
+                    <!-- <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  "
+                        href="../index.html">Foundations(基礎)</a> -->
+                    <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none active"
+                        href="#">Design(設計)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
                         href="./components/components.html">Components(元件)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
@@ -60,10 +61,10 @@
                     <div class=" d-flex justify-content-sm-start justify-content-md-center ">
                         <nav class="my-2 my-md-0 mr-md-3 font-weight-bolder nav-masthead w-sm-100"
                             style="letter-spacing: 1.5px;">
-                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  active"
-                                href="#">Foundations(基礎)</a>
-                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none"
-                                href="./design/design.html">Design(設計)</a>
+                            <!-- <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none  "
+                                href="../index.html">Foundations(基礎)</a> -->
+                            <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none active"
+                                href="#">Design(設計)</a>
                             <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
                                 href="./components/components.html">Components(元件)</a>
                             <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
@@ -74,52 +75,114 @@
 
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
         <div class="main-body ">
             <div class="container-fluid ">
                 <div class="row " style="font-size: 18px;">
 
-
-                    <div class="col-xl-2 col-lg-3 col-md-12 bg-grayblue pt-md-2 ml-4 ml-md-0 px-4 slidemenu-height slidemenu-height"
+                    <div class="col-xl-2 col-lg-3 col-md-12 bg-grayblue pt-md-5 ml-4 ml-md-0 px-4 slidemenu-height"
                         style="letter-spacing: 1.5px;line-height: 36px;">
-                        <div class="collapse navbar-collapse" id="slidemenucontent">
-                            <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
-                                <a href="#satu" title="Manage Your Team" data-toggle="collapse" aria-expanded="false"
-                                    class=" font-weight-bolder text-dark text-decoration-none d-block">
-                                    <span>About IIoT</span>
-                                </a>
-                                <!-- 768px以上 flex-column collapse available  -->
-                                <ul class="collapse" id="satu" style="list-style: none;margin-left: -2.5rem;">
+                        <div class="collapse navbar-collapse " id="slidemenucontent">
+                           
+                                <li class="slidemenu mt-3 mt-md-0 d-flex flex-column" style="list-style: none;">
 
-                                    <li class="active">
-                                        <a href="#" title="" class="text-decoration-none text-dark">
-                                            <span>技術</span>
-                                        </a>
-                                    </li>
-                                    <li class="">
-                                        <a href="#" title="" class="text-decoration-none disabled " disabled>
-                                            <span>了解更多</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-
-                            </li>
+                                    <a href="#design" title="Manage Your Team" data-toggle="collapse"
+                                        class=" font-weight-bolder text-dark text-decoration-none pr-1 d-block ">
+                                        <span>Design</span>
+                                    </a>
+                                    <ul class=" collapse show " id="design"
+                                        style="list-style: none;margin-left: -2.5rem;">
+                                        <li class=" ">
+                                            <a href="#" title="tool" 
+                                                class="  text-dark text-decoration-none active">
+                                                <span class="text-break">工具</span>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./design/color.html" title="color" 
+                                                class=" text-dark text-decoration-none ">
+                                                顏色
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class="  text-dark text-decoration-none disabled">
+                                                <span>文字</span>
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class=" font-weight-bolder text-dark text-decoration-none disabled">
+                                                <span>Icons</span>
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class=" font-weight-bolder text-dark text-decoration-none disabled">
+                                                <span>RWD斷點</span>
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class=" font-weight-bolder text-dark text-decoration-none disabled">
+                                                <span>交互</span>
+                                            </a>
+                                        </li>
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class=" font-weight-bolder text-dark text-decoration-none disabled">
+                                                <span>SCSS</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#codeInjection" title="Manage Your Team" data-toggle="collapse"
+                                        class=" font-weight-bolder text-dark text-decoration-none pr-1 d-block">
+                                        <span>資料安全</span>
+                                    </a>
+                                    <ul class=" collapse show" id="codeInjection"
+                                        style="list-style: none;margin-left: -2.5rem;">
+                                        <li class="slidemenu " style="list-style: none;">
+                                            <a href="#satu" title="Manage Your Team" data-toggle="collapse"
+                                                class=" font-weight-bolder text-dark text-decoration-none disabled">
+                                                <span>隱碼規則</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-
-
                     <div class="col-xl-10 col-lg-9 col-md-12 pt-5 px-4 bg-white border-left border-right shadow-sm px-5"
                         style="height:85vh">
-                        &emsp; &emsp;所有不同裝置與感測資料中華電信企業客戶分公司物聯網平臺可收集不同感測裝置的資料，
-                        並從單一平臺做存取。平臺提供符合物聯網國際ＯＧＣ標準之API，讓使用者可透過簡單的API，
-                        將資料上傳至平臺，安全且有效率。平臺使用RESTful、MQTT、WebSocket、CoAP與Kafka 做為協定， 並使用JSON當作資料交換格式，提供使用者最簡便且快速的方法與平臺介接。
+                        <article>
+                            &emsp; &emsp;中華電信IIOT工業物聯網採PWA(Progressive Web App)『漸進式』的網站應用程式，可適應不同裝置大小，透過URL互相傳遞分享，
+                            亦可在手機上安裝應用程式，直接在手機點擊開啟，具有像 APP 般的瀏覽速度等優點，提供更佳的用戶體驗。
+                        </article>
+                        <article class="mt-4">
+                            <p class="h4 text-primary">CSS style</p>
+                            <span>
+                                採 <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+                                    target="_blank">Boostrap</a> css framework，
+                                版本為<span class="text-code">v4.6</span>。
+                            </span>
+                        </article>
+                        <article class="mt-4">
+                            <p class="h4 text-primary">Frontend framework</p>
+                            <span>
+                                採React前端框架，目前版本為<span class="text-code">16.13.1</span>。
+                            </span>
+                        </article>
+                        <article class="mt-4">
+                            <p class="h4 text-primary">UI library</p>
+                            <span>
+                                採 <a href="https://coreui.io/react/docs/getting-started/introduction/"
+                                    target="_blank">COREUI</a> UI library，
+                                線上預覽<a href="https://coreui.io/react/demo/4.3/#/dashboard">Live
+                                    preview</a></span>，樣式同<span class="text-code">Boostrap</span>。
+                            </span>
+                        </article>
+
                     </div>
                 </div>
 
@@ -147,8 +210,6 @@
     //         $(this).collapse('hide');
     //     });
     // });
-
-
 </script>
 
 </html>
