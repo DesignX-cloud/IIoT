@@ -86,7 +86,6 @@ body p{
     flex-grow: 1;
 }
 
-
 .content-height{
    min-height:65vh;
     /* overflow-y: scroll;
@@ -319,4 +318,48 @@ a.text-dark:hover {
     transition: transform .2s ease-in-out;
 }
 
+.btn-new-primary {
+    color: #fff;
+    background-color: hsl(205, 100%, 34%);
+    border-color: hsl(205, 100%, 34%);
+}
 
+.btn-new-primary:hover{
+    color: #fff;
+    background-color: hsl(205, 100%, 40%);
+}
+
+.btn-new-secondary{
+    color: #fff;
+    background-color: hsl(205, 100%, 50%);
+    border-color: hsl(205, 100%, 50%);
+}
+
+.btn-new-secondary:hover{
+    color: #fff;
+    background-color: hsl(205, 100%, 55%);
+    border-color: hsl(205, 100%, 55%);;
+}
+
+
+.btn-new-outline-secondary{
+    color: hsl(205, 100%, 55%);
+    border-color: hsl(205, 100%, 55%);
+}
+
+.btn-cancel{
+    color: #fff;
+    background-color: hsl(205, 25%, 30%);
+    border-color: hsl(205, 25%, 30%);
+}
+
+.btn-cancel:hover{
+    color: #fff;
+    background-color: hsl(205, 25%, 40%);
+   
+}
+
+.btn-outline-cancel{
+    color: hsl(205, 25%, 30%);
+    border-color: hsl(205, 25%, 30%);
+}
