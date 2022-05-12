@@ -347,6 +347,11 @@ a.text-dark:hover {
     border-color: hsl(205, 100%, 55%);
 }
 
+.btn-new-outline-secondary:hover{
+    color: #fff;
+    background-color: hsl(205, 100%, 45%);
+}
+
 .btn-cancel{
     color: #fff;
     background-color: hsl(205, 25%, 30%);
@@ -362,4 +367,9 @@ a.text-dark:hover {
 .btn-outline-cancel{
     color: hsl(205, 25%, 30%);
     border-color: hsl(205, 25%, 30%);
+}
+
+.btn-outline-cancel:hover{
+    background-color: hsl(205, 25%, 40%);
+    color: #fff;
 }
