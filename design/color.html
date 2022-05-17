@@ -52,7 +52,7 @@
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none active"
                         href="#">Design(設計)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
-                        href="../components/components.html">Components(元件)</a>
+                        href="../components/colorbook-iiot.html">Components(元件)</a>
                     <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
                         href="#">Patterns(模板)</a>
                 </nav>
@@ -66,7 +66,7 @@
                             <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none active"
                                 href="#">Design(設計)</a>
                             <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none "
-                                href="../components/components.html">Components(元件)</a>
+                                href="../components/colorbook-iiot.html">Components(元件)</a>
                             <a class="p-2 text-dark d-block d-sm-inline-block text-decoration-none disabled"
                                 href="#">Patterns(模板)</a>
                         </nav>
@@ -385,13 +385,37 @@
                         <img src="../img/Checker2.png" class="img-fluid " style="width:40rem" alt="...">
                         <img src="../img/secondaryColor.png" class="img-fluid " style="width:30rem" alt="...">
                         <p class="mt-3 font-weight-bold">3.Neutrals中性色</p>
-                        <p class="mt-2">3-1回到1-4.HSL Calculator， Saturation飽和度，從100降為50
+                        <p class="mt-2">3-1回到1-4.HSL Calculator， Saturation飽和度，從100降為50，h色相是情況可以略調整
                         </p>
+
                         <img src="../img/eff3f5.png" class="img-fluid " style="width:40rem" alt="...">
                         <p class="mt-2">3-2 點擊HSL Calculator Use this color in our Color Picker連結帶出</p>
                         <img src="../img/eff3f5step.png" class="img-fluid " style="width:40rem" alt="...">
                         <p class="mt-3 font-weight-bold">3-3參考2-1挑選出幾個適當的灰階做surface/on surface使用</p>
+
                         <img src="../img/grey step.png" class="img-fluid " style="width:40rem" alt="...">
+                        <p class="text-danger">註:以IIOT為例，保持同樣色相205調整出來灰階，整體視覺感知太過呆板</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <img src="../img/redesign.jpg" class="img-fluid " style="width:40rem" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">IIoT 主色 hsl(205, 100%, 34%)</h5>
+                                    <p class="card-text">IIoT 主色hsl(205, 100%, 34%)調整飽和度和明度計算出來灰階</p>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="../img/redesign2.jpg" class="img-fluid " style="" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">校正後灰階</h5>
+                                    <p class="card-text">太過於規律產生效果呆板，校正第一個數值205 =>208、210、218、220 校正出來帶藍灰階，讓整體有些微差異讓背景之間有些差異做出區隔性</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="../img/Correct gray .png" class="img-fluid " style="width:40rem" alt="...">
+
                         <p class="mt-3 font-weight-bold">4. Semantic surface Colors on modal 語義顏色應用彈跳式modal</p>
                         <div class="row">
                             <div class="col-sm-6">
@@ -409,13 +433,14 @@
                                 <img src="../img/modal-warning.jpg" class="img-fluid " style="width:40rem" alt="...">
                             </div>
                         </div>
+
                         <ul class="mt-2" style="list-style-type: square">
                             <li class="h4">Button color</li>
 
                         </ul>
 
                         <div class="d-flex justify-content-between flex-wrap ">
-                          
+
                             <button type="button" class="btn btn-new-primary pr-2">Primary Color</button>
                             <button type="button" class="btn btn-new-primary pr-2 col-1">+新增專案 </button>
 
@@ -424,18 +449,21 @@
                             <button type="button" class="btn btn-cancel pr-2">Cancel color</button>
                             <button type="button" class="btn btn-outline-cancel col-1">取消</button>
                             <button type="button" class="btn btn-success pr-2">Success color</button>
-                            <button type="button" class="btn btn-outline-success pr-2 col-1"><i class="fa-solid fa-location-dot mr-2"></i>map</button>
+                            <button type="button" class="btn btn-outline-success pr-2 col-1"><i
+                                    class="fa-solid fa-location-dot mr-2"></i>map</button>
                             <button type="button" class="btn btn-danger">Danger color</button>
-                            <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i> Delete</button>
+                            <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash-can"></i>
+                                Delete</button>
                             <button type="button" class="btn btn-warning">Warning color</button>
-                            <button type="button" class="btn btn-warning"><i class="fa-solid fa-paperclip"></i>解除配對</button>
+                            <button type="button" class="btn btn-warning"><i
+                                    class="fa-solid fa-paperclip"></i>解除配對</button>
 
                         </div>
 
-                       
-                       
-                   
-                      
+
+
+
+
                     </div>
                 </div>
 
