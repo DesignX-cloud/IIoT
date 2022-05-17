@@ -373,3 +373,11 @@ a.text-dark:hover {
     background-color: hsl(205, 25%, 40%);
     color: #fff;
 }
+
+/* 上下左右居中 */
+
+.cross-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
