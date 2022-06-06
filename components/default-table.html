@@ -193,14 +193,14 @@
                                     style="list-style: none;margin-left: -2.5rem;">
                                     <li class="slidemenu">
                                         <a href="#" title="" class="text-decoration-none text-dark active">
-                                            <span class="text-break">[Principle]default table</span>
+                                            <span class="text-break">[Principle]isNoCard</span>
                                         </a>
                                     </li>
-                                    <li class="slidemenu">
+                                    <!-- <li class="slidemenu">
                                         <a href="./card-table.html" title="" class="text-decoration-none text-dark ">
                                             <span class="text-break">[Principle]card table</span>
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="slidemenu">
                                         <a href="./collapse-table.html" title="" class="text-decoration-none text-dark ">
                                             <span class="text-break">[Principle]collapse table</span>
@@ -458,6 +458,86 @@
                         </ul>
 
                         <img src="../img/default table mobile.jpg" class="img-fluid" alt="...">
+
+                        <ul class="mt-5" style="list-style-type: square">
+                            <li class="h4"><kbd>isNoCard:fasle</kbd>
+                            </li>
+
+                        </ul>
+
+                        <p class="py-2" style="font-size:20px">
+                            如上，提及<kbd>isNoCard</kbd>預設為<span class="text-code">true</span>，
+                            維持Table型態overflow-x: auto，x軸超過畫面內容自動打開x軸滾動軸 。若要啟用為<span class="text-code">fasle</span>，576px</kbd>以下，瀏覽方式維持table型態或<kbd class="mx-2">tr</kbd>橫行<kbd class="mx-2">display:block
+                            </kbd>成為
+                            獨立卡片型態
+                        </p>
+
+                        <ul class="mt-5" style="list-style-type: square">
+                            <li class="h4">使用情境</li>
+
+                        </ul>
+
+                        <ul class="mt-3" style="list-style-type: decimal">
+                            <li class="h5">可各別啟用/編輯/刪除
+                            </li>
+
+                            <li class="h5">
+                                不帶全選cheackbox
+
+                            </li>
+
+                            <li class="h5">多欄位導致手機模式x軸滾動過長，操作體驗不佳情境
+
+                            </li>
+
+                          
+                        </ul>
+                       
+
+                       
+
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">set	</th>
+                                <th scope="col">Description</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">isNoCard</th>
+                                <td>bool</td>
+                                <td>fasle</td>
+                                <td>手機尺寸<kbd class="mx-2">576px</kbd>以下，<kbd class="mx-2">tr</kbd>橫行<kbd class="mx-2">display:block
+                                </kbd>成為獨立卡片型態</td>
+                              </tr>
+
+                              
+                          
+                             
+                            </tbody>
+                          </table>
+
+                          <ul class="mt-5" style="list-style-type: square">
+                            <li class="h4"><kbd>內容</kbd>
+                            </li>
+
+                        </ul>
+
+                          <ul class="mt-3" style="list-style-type: decimal">
+                          <li class="h5">
+                            sort功能獨立出來致於input type下(圖數字一)
+
+
+                          </li>
+                          <li class="h5">無table-striped斑馬線樣式，全部皆灰背景
+
+                        </li>
+                      </ul>
+
+                      <img src="../img/cardTable.png" class="img-fluid" alt="...">
                     </div>
                 </div>
 
